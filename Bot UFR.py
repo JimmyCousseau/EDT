@@ -69,28 +69,16 @@ class Request:
             
 
 days = ["1", "2", "3", "4", "5", "6", "7"]
-periode = ["Aujourd'hui", "Demain"]
+periode = ["Aujourd'hui"]
 
 
 Personnes = [
-    ["Jimmy", "Bouloie", "Bouloie", "https://sedna.univ-fcomte.fr/jsp/custom/ufc/mplanif.jsp?id=16772&jours="],
-    ["Paul",  "Bouloie", "Bouloie",
-        "https://sedna.univ-fcomte.fr/jsp/custom/ufc/mplanif.jsp?id=16759&jours="],
-    ["Clara et Romain",  "Bouloie", "Bouloie",
-        "https://sedna.univ-fcomte.fr/jsp/custom/ufc/mplanif.jsp?id=16799&jours="],
-    ["Antoitoine",  "Bouloie", "Bouloie",
-        "https://sedna.univ-fcomte.fr/jsp/custom/ufc/mplanif.jsp?id=19298&jours="],
-    ["Pierre", "Arsenal", "Bouloie",
-        "https://sedna.univ-fcomte.fr/jsp/custom/ufc/mplanif.jsp?id=4728&jours=", "https://sedna.univ-fcomte.fr/jsp/custom/ufc/mplanif.jsp?id=14555&jours=", "https://sedna.univ-fcomte.fr/jsp/custom/ufc/mplanif.jsp?id=2054&jours=", 
-        "https://sedna.univ-fcomte.fr/jsp/custom/ufc/mplanif.jsp?id=14584&jours=", "https://sedna.univ-fcomte.fr/jsp/custom/ufc/mplanif.jsp?id=2048&jours=", "https://sedna.univ-fcomte.fr/jsp/custom/ufc/mplanif.jsp?id=10165&jours=", 
-        "https://sedna.univ-fcomte.fr/jsp/custom/ufc/mplanif.jsp?id=2051&jours=", "https://sedna.univ-fcomte.fr/jsp/custom/ufc/mplanif.jsp?id=14670&jours=",]
+    ["Personne1", "LieuEtude", "LieuVie", "https://sedna.univ-fcomte.fr/jsp/custom/ufc/.......&jours="]
     ]
 
-for i in range(len(Personnes) - 1):
+for i in range(len(Personnes)):
     Personnes[i] = Request(days[0], Personnes[i][0],
                            Personnes[i][1], Personnes[i][2], Personnes[i][3])
-Personnes[4] = Request(days[2], Personnes[4][0], Personnes[4]
-                       [1], Personnes[4][2], Personnes[4][3], Personnes[4][4])
 
 
 for j in range(len(periode)):
