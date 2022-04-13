@@ -37,9 +37,9 @@ class Request:
             """ Récupère le jour pour enlever les données qu'on ne veut pas """
             i = 0
             numerExpr = r"(\d+)"
-            day.extend(re.findall(r"(\s\d\d\s)", html))
+            day.extend(re.findall(r"(\s\d{1,2}\s)", html))
             nb_horaires = day.count(
-                " " + today.strftime("%d") + " ")
+                " " + today + " ")
             """"""""""""""""""""""""""""""""""""""""""""""""""""""
             """ for : trie les données dans les tableaux """
             for heure in heures:
@@ -55,7 +55,7 @@ class Request:
                 
         """ for : sélectionne l'horaire le plus proche de midi """
         for i in range(nb_horaires):
-            if day[i] == " " + today.strftime("%d") + " ":
+            if day[i] == " " + today + " ":
                 if self.B_list[i] >= 12 and self.B >= self.B_list[i]:
                     self.B = self.B_list[i]
                 if self.E_list[i] <= 12:
@@ -99,13 +99,24 @@ Personnes[1] = Request(1, Personnes[4][0], Personnes[4]
 
 
 """ Affiche les prédictions """
-for j in range(2):
+horaire = ""
+for j in range(len(periode)):
     today = date.today() + timedelta(days=j)
-    print("Pour " + today.strftime("%d"))
+    todayJ = today.strftime("%A")
+    if (today.strftime("%d")[0] == "0"):
+        today = today.strftime("%d")[1:]
+    else:
+        today = today.strftime("%d")
+    print("Pour " + todayJ + " " + today)
+    horaire += "--------------------------------------------------------\n"
+    horaire += "Pour " + todayJ + " " + today + "\n"
     for i in range(len(Personnes)):
-        Personnes[i].jours = str(j + 1)
+        Personnes[i].jours = days[j]
         Personnes[i].get_scheduled()
         print(Personnes[i].predictions())
+        horaire += Personnes[i].predictions() + "\n" 
+    print(Personnes[4].B)
+    print(Personnes[4].E)
 
 
 """ À partir d'ici tout est pour envoyer sur discord """
@@ -118,16 +129,22 @@ client = discord.Client()
 
 @client.event
 async def on_ready():
+    global horaire
     for guild in client.guilds:
         if guild.name == GUILD:
+            channel_horaire = client.get_channel(954627832007495720)
+            await channel_horaire.send("Bonjour, voici les prévisions du jour :")
+            
+            await channel_horaire.send(horaire)
+            print(
+                f'{client.user} is connected to the following guild:\n'
+                f'{guild.name}(id: {guild.id})'
+            )
+            raise SystemExit("Le travaille a été fait")
             break
 
-    print(
-        f'{client.user} is connected to the following guild:\n'
-        f'{guild.name}(id: {guild.id})'
-    )
 
-startTimer = time.time() - 600 """ Pour l'anti-spam """
+startTimer = time.time() - 600
 
 @client.event
 async def on_message(message):
@@ -140,9 +157,9 @@ async def on_message(message):
             horaire += "--------------------------------------------------------\n"
             horaire += "Pour " + today.strftime("%A") + " " + today.strftime("%d") + "\n"
             for i in range(len(Personnes)):
-                Personnes[i].jours = str(j + 1)
+                Personnes[i].jours = days[j]
                 Personnes[i].get_scheduled()
                 horaire += Personnes[i].predictions() + "\n"
             await message.channel.send(horaire)
-
+            
 client.run(TOKEN)
