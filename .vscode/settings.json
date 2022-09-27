@@ -1,0 +1,18 @@
+{
+    "java.project.sourcePaths": [
+        "3 Types Agrégées",
+        ".",
+        "2 Random",
+        "1 Début",
+        "1.2 Début+",
+        "4 Tableaux",
+        "5 récursivité",
+        "6progobjet"
+    ],
+    "java.debug.logLevel": "info",
+    "cmake.configureOnOpen": true,
+    "java.project.referencedLibraries": [
+        "lib/**/*.jar",
+        "scite/mysql-connector-java.jar"
+    ]
+}

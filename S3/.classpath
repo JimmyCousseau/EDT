@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
+	<classpathentry kind="src" path="Grupo33-Cousseau-Jimmy/src"/>
+	<classpathentry kind="src" path="Practica 1/src"/>
+	<classpathentry kind="src" path="SwingTest/src"/>
+	<classpathentry kind="src" path="Tema 1 - Swing/src"/>
+	<classpathentry kind="src" path="Tema 2 - Swing/src"/>
+	<classpathentry kind="output" path="Grupo33-Cousseau-Jimmy/bin"/>
+</classpath>

@@ -1,0 +1,239 @@
+{
+    // Utilisez IntelliSense pour en savoir plus sur les attributs possibles.
+    // Pointez pour afficher la description des attributs existants.
+    // Pour plus d'informations, visitez : https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "type": "java",
+            "name": "Launch Sudoku",
+            "request": "launch",
+            "mainClass": "graphics.Sudoku",
+            "projectName": "Java_7de47a12"
+        },
+        {
+            "type": "java",
+            "name": "Launch test",
+            "request": "launch",
+            "mainClass": "graphics.test",
+            "projectName": "Java_7de47a12"
+        },
+        {
+            "type": "java",
+            "name": "Launch BD",
+            "request": "launch",
+            "mainClass": "scite.BD",
+            "projectName": "Java_7de47a12"
+        },
+        {
+            "type": "java",
+            "name": "Launch BD",
+            "request": "launch",
+            "mainClass": "BD",
+            "projectName": "Java_7de47a12"
+        },
+        {
+            "type": "java",
+            "name": "Launch SQLDatabaseConnection",
+            "request": "launch",
+            "mainClass": "SQLDatabaseConnection",
+            "projectName": "Java_7de47a12"
+        },
+        {
+            "type": "java",
+            "name": "Launch Main",
+            "request": "launch",
+            "mainClass": "Main",
+            "projectName": "Java_7de47a12"
+        },
+        {
+            "type": "java",
+            "name": "Launch main",
+            "request": "launch",
+            "mainClass": "main",
+            "projectName": "Java_7de47a12"
+        },
+        {
+            "type": "java",
+            "name": "Launch rectangle",
+            "request": "launch",
+            "mainClass": "rectangle",
+            "projectName": "Java_7de47a12"
+        },
+        {
+            "type": "java",
+            "name": "Launch permutation_merde",
+            "request": "launch",
+            "mainClass": "permutation_merde",
+            "projectName": "Java_7de47a12"
+        },
+        {
+            "type": "java",
+            "name": "Launch permutation",
+            "request": "launch",
+            "mainClass": "permutation",
+            "projectName": "Java_7de47a12"
+        },
+        {
+            "type": "java",
+            "name": "Launch Fibonacci",
+            "request": "launch",
+            "mainClass": "Fibonacci",
+            "projectName": "Java_7de47a12"
+        },
+        {
+            "type": "java",
+            "name": "Launch suite_fibo",
+            "request": "launch",
+            "mainClass": "suite_fibo",
+            "projectName": "Java_7de47a12"
+        },
+        {
+            "type": "java",
+            "name": "Launch Affichage_recursif",
+            "request": "launch",
+            "mainClass": "Affichage_recursif",
+            "projectName": "Java_7de47a12"
+        },
+        {
+            "type": "java",
+            "name": "Launch factorielle_recursif",
+            "request": "launch",
+            "mainClass": "factorielle_recursif",
+            "projectName": "Java_7de47a12"
+        },
+        {
+            "type": "java",
+            "name": "Launch Fusion_tab_ordered",
+            "request": "launch",
+            "mainClass": "Fusion_tab_ordered",
+            "projectName": "Java_7de47a12"
+        },
+        {
+            "type": "java",
+            "name": "Launch test",
+            "request": "launch",
+            "mainClass": "test",
+            "projectName": "Java_7de47a12"
+        },
+        {
+            "type": "java",
+            "name": "Launch Demineur",
+            "request": "launch",
+            "mainClass": "Demineur",
+            "projectName": "Java_7de47a12"
+        },
+        {
+            "type": "java",
+            "name": "Launch AlgoTri",
+            "request": "launch",
+            "mainClass": "AlgoTri",
+            "projectName": "Cours_47694b2d"
+        },
+        {
+            "type": "java",
+            "name": "Launch search_char_in_text",
+            "request": "launch",
+            "mainClass": "search_char_in_text",
+            "projectName": "Cours_47694b2d"
+        },
+        {
+            "type": "java",
+            "name": "Launch Tab_rand_sorted",
+            "request": "launch",
+            "mainClass": "Tab_rand_sorted",
+            "projectName": "Cours_47694b2d"
+        },
+        {
+            "type": "java",
+            "name": "Launch TP_recherche",
+            "request": "launch",
+            "mainClass": "TP_recherche",
+            "projectName": "Cours_47694b2d"
+        },
+        {
+            "type": "java",
+            "name": "Launch Tab_matrices",
+            "request": "launch",
+            "mainClass": "Tab_matrices",
+            "projectName": "Cours_47694b2d"
+        },
+        {
+            "type": "java",
+            "name": "Launch Age",
+            "request": "launch",
+            "mainClass": "Age",
+            "projectName": "Cours_47694b2d"
+        },
+        {
+            "type": "java",
+            "name": "Launch Age",
+            "request": "launch",
+            "mainClass": "Age",
+            "projectName": "Cours_5f3f84eb"
+        },
+        {
+            "type": "java",
+            "name": "Launch Tab_matrices",
+            "request": "launch",
+            "mainClass": "Tab_matrices",
+            "projectName": "Cours_5f3f84eb"
+        },
+        {
+            "type": "java",
+            "name": "Launch Tab_Type_agrege",
+            "request": "launch",
+            "mainClass": "Tab_Type_agrege",
+            "projectName": "Cours_5f3f84eb"
+        },
+        {
+            "type": "java",
+            "name": "Launch deplacementpoint",
+            "request": "launch",
+            "mainClass": "deplacementpoint",
+            "projectName": "Cours_5f3f84eb"
+        },
+        {
+            "type": "java",
+            "name": "Launch pyramides",
+            "request": "launch",
+            "mainClass": "pyramides",
+            "projectName": "Cours_5f3f84eb"
+        },
+        {
+            "type": "java",
+            "name": "Launch fleche",
+            "request": "launch",
+            "mainClass": "fleche",
+            "projectName": "Cours_5f3f84eb"
+        },
+        {
+            "type": "java",
+            "name": "Launch echelle",
+            "request": "launch",
+            "mainClass": "echelle",
+            "projectName": "Cours_5f3f84eb"
+        },
+        {
+            "type": "java",
+            "name": "Launch Fibonacci",
+            "request": "launch",
+            "mainClass": "Fibonacci",
+            "projectName": "Cours_5f3f84eb"
+        },
+        {
+            "type": "java",
+            "name": "Launch Tab",
+            "request": "launch",
+            "mainClass": "Tab",
+            "projectName": "Cours_5f3f84eb"
+        },
+        {
+            "type": "java",
+            "name": "Launch Tab_other",
+            "request": "launch",
+            "mainClass": "Tab_other",
+            "projectName": "Cours_5f3f84eb"
+        }
+    ]
+}
